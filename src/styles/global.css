@@ -117,14 +117,14 @@
   --brand-blue-900: oklch(44.281% 0.16949 264.057);
 }
 
-@layer base {
+/*@layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+}*/
 
 @font-face {
   font-family: "Poppins";
@@ -132,45 +132,66 @@
   src: url("public/fonts/Poppins-thin.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 200;
   src: url("/public/fonts/Poppins-ExtraLight.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 300;
   src: url("/public/fonts/Poppins-Light.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 400;
   src: url("/public/fonts/Poppins-Regular.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 500;
   src: url("/public/fonts/Poppins-Medium.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 600;
   src: url("/public/fonts/Poppins-SemiBold.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 700;
   src: url("/public/fonts/Poppins-Bold.ttf") format("ttf");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Poppins";
   font-weight: 800;
   src: url("/public/fonts/Poppins-ExtraBold.ttf") format("ttf");
   font-display: swap;
+}
+
+@keyframes waterEffect {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animate-waterEffect {
+  animation: waterEffect 15s infinite linear;
+  background-image: url("pool-dark.png"); /* Coloca la URL de tu imagen de agua */
 }
