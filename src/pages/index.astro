@@ -1,4 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Button } from "@/components/ui/button";
+import Navbar from "@/components/astro/Navbar.astro";
+import Counter from "@/components/astro/counter.astro";
 ---
-<BaseLayout title="Logistics Hackathon"> </BaseLayout>
+<BaseLayout title="Logistics Hackathon">
+  <Navbar></Navbar>
+  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
+    <h1 class="text-6xl font-bold text-white mb-8">Logistics Hackathon</h1>
+
+    <!-- Countdown Timer Component -->
+    <Counter targetDate="2025-12-31T23:59:59" />
+
+    <Button>
+      Regístrate
+    </Button>
+  </div>
+</BaseLayout>
