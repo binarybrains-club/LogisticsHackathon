@@ -8,7 +8,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://binarybrains-upiicsa.github.io",
-  base: "BrainHack",
+  base: "LogisticsHackathon",
 
   vite: {
     plugins: [tailwindcss()],
