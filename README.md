@@ -9,14 +9,13 @@ Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
    git clone https://github.com/tu-usuario/BrainHack.git
    cd BrainHack
    ```
-
-2. **Instala las dependencias:**
+2. Instalar [deno](https://deno.com/)
+3. **Instala las dependencias:**
    ```bash
-   npm install -g deno
    deno install
    ```
 
-3. **Ejecuta el servidor de desarrollo:**
+4. **Ejecuta el servidor de desarrollo:**
    ```bash
    deno run dev
    ```
@@ -48,25 +47,24 @@ Cualquier recurso estático, como imágenes, puede colocarse en el directorio `p
 
 Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-| Comando                | Acción                                           |
-| :--------------------- | :----------------------------------------------- |
-| `deno install`         | Instala las dependencias                         |
-| `deno task dev`             | Inicia el servidor de desarrollo local en `localhost:4321` |
-| `deno task build`           | Construye tu sitio de producción en `./dist/`    |
-| `deno task preview`         | Previsualiza tu construcción localmente, antes del despliegue |
-| `deno run npm:astro ...`       | Ejecuta comandos CLI como `astro add`, `astro check` |
-| `deno run npm:astro -- --help` | Obtiene ayuda usando la CLI de Astro            |
-| `deno run npm:shadcn@latest add <componente>` | Agrega componentes de shadcn/ui |
+| Comando                                       | Acción                                                        |
+| :-------------------------------------------- | :------------------------------------------------------------ |
+| `deno install`                                | Instala las dependencias                                      |
+| `deno task dev`                               | Inicia el servidor de desarrollo local en `localhost:4321`    |
+| `deno task build`                             | Construye tu sitio de producción en `./dist/`                 |
+| `deno task preview`                           | Previsualiza tu construcción localmente, antes del despliegue |
+| `deno run npm:astro ...`                      | Ejecuta comandos CLI como `astro add`, `astro check`          |
+| `deno run npm:astro -- --help`                | Obtiene ayuda usando la CLI de Astro                          |
+| `deno run npm:shadcn@latest add <componente>` | Agrega componentes de shadcn/ui                               |
 
 ## 📚 Tecnologías Usadas
 
 Este proyecto utiliza las siguientes tecnologías principales:
 
-| Tecnología | Descripción | Documentación |
-| :--------- | :---------- | :------------ |
-| **React** | Biblioteca de JavaScript para construir interfaces de usuario | [Documentación](https://react.dev/) |
-| **Astro** | Framework web moderno para construir sitios web rápidos y centrados en el contenido | [Documentación](https://docs.astro.build/) |
-| **Tailwind CSS** | Framework de CSS utilitario para diseño rápido y personalizable | [Documentación](https://tailwindcss.com/docs) |
-| **shadcn/ui** | Biblioteca de componentes reutilizables construida con Radix UI y Tailwind CSS | [Documentación](https://ui.shadcn.com/) |
-| **Radix UI** | Biblioteca de componentes primitivos de bajo nivel para crear sistemas de diseño de alta calidad | [Documentación](https://www.radix-ui.com/) |
-
+| Tecnología       | Descripción                                                                                      | Documentación                                 |
+| :--------------- | :----------------------------------------------------------------------------------------------- | :-------------------------------------------- |
+| **React**        | Biblioteca de JavaScript para construir interfaces de usuario                                    | [Documentación](https://react.dev/)           |
+| **Astro**        | Framework web moderno para construir sitios web rápidos y centrados en el contenido              | [Documentación](https://docs.astro.build/)    |
+| **Tailwind CSS** | Framework de CSS utilitario para diseño rápido y personalizable                                  | [Documentación](https://tailwindcss.com/docs) |
+| **shadcn/ui**    | Biblioteca de componentes reutilizables construida con Radix UI y Tailwind CSS                   | [Documentación](https://ui.shadcn.com/)       |
+| **Radix UI**     | Biblioteca de componentes primitivos de bajo nivel para crear sistemas de diseño de alta calidad | [Documentación](https://www.radix-ui.com/)    |

@@ -3,17 +3,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/astro/Navbar.astro";
 import Counter from "@/components/astro/counter.astro";
+import Aboutus from "@/components/astro/Aboutus.astro";
 ---
-<BaseLayout title="BrainHack">
+<BaseLayout title="Logistics Hackathon">
   <Navbar></Navbar>
   <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
-    <h1 class="text-6xl font-bold text-white mb-8">BRAIN HACK</h1>
-    
+    <h1 class="text-6xl font-bold text-white mb-8">Logistics Hackathon</h1>
+
     <!-- Countdown Timer Component -->
     <Counter targetDate="2025-12-31T23:59:59" />
-    
+
     <Button >
-      Regístrate 
-    </Button>
+        <a
+       href="https://luma.com/a317pq6t"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Regístrate al evento Brainhack en Luma">
+          Regístrate
+        </a>
+      </Button>
+
+
+  </div>
+  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
+        <Aboutus></Aboutus>
   </div>
 </BaseLayout>

@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-poppins: "Poppins", system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -43,15 +44,16 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(14.522% 0.06103 271.769);
+  --background: oklch(31.648% 0.09765 145.673);
   --foreground: oklch(0.985 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(64.806% 0.16123 250.489);
+  --primary: oklch(73.837% 0.18156 138.352);
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(56.807% 0.19042 268.135);
+  --secondary: oklch(68.681% 0.10768 161.416);
+
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -76,19 +78,21 @@
   --sidebar-ring: oklch(0.708 0 0);
   --brand-blue-100: oklch(77.13% 0.1184 233.471);
   --brand-blue500: oklch(53.778% 0.1491 252.581);
-  --brand-blue-900: oklch(44.281% 0.16949 264.057); 
+  --brand-blue-900: oklch(44.281% 0.16949 264.057);
+  --brand-green-100: oklch(57.027% 0.13135 138.182);
+
 }
 
 .dark {
-  --background: oklch(14.522% 0.06103 271.769);
+  --background: oklch(31.648% 0.09765 145.673);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(64.806% 0.16123 250.489);
+  --primary: oklch(73.837% 0.18156 138.352);
   --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(56.807% 0.19042 268.135);
+  --secondary: oklch(68.681% 0.10768 161.416);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
@@ -112,15 +116,85 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --brand-blue-100: oklch(77.13% 0.1184 233.471);
-  --brand-blue500: oklch(53.778% 0.1491 252.581);
-  --brand-blue-900: oklch(44.281% 0.16949 264.057); 
+  --brand-blue-500: oklch(53.778% 0.1491 252.581);
+  --brand-blue-900: oklch(44.281% 0.16949 264.057);
 }
 
-@layer base {
+/*@layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
+}*/
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 100;
+  src: url("public/fonts/Poppins-thin.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 200;
+  src: url("/public/fonts/Poppins-ExtraLight.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  src: url("/public/fonts/Poppins-Light.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("/public/fonts/Poppins-Regular.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  src: url("/public/fonts/Poppins-Medium.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("/public/fonts/Poppins-SemiBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url("/public/fonts/Poppins-Bold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  src: url("/public/fonts/Poppins-ExtraBold.ttf") format("ttf");
+  font-display: swap;
+}
+
+@keyframes waterEffect {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animate-waterEffect {
+  animation: waterEffect 15s infinite linear;
+  background-image: url("pool-dark.png"); /* Coloca la URL de tu imagen de agua */
 }

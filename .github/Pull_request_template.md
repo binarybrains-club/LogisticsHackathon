@@ -2,10 +2,9 @@
 
 Explica breve pero conciso que cambios hiciste y el porqué.
 
-## Número de Issue 
+## Número de Issue
 
-
-## Checklist 
+## Checklist
 
 - [ ] El código compila sin errores
 - [ ] Aprobados todos los checks

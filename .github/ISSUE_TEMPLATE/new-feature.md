@@ -1,9 +1,9 @@
 ---
 name: 🚀 Nueva Funcionalidad
 about: Solicita una nueva característica o funcionalidad para el proyecto
-title: '[FEATURE] '
-labels: ['enhancement', 'nueva-funcionalidad']
-assignees: ''
+title: "[FEATURE] "
+labels: ["enhancement", "nueva-funcionalidad"]
+assignees: ""
 ---
 
 ## 📋 Descripción
