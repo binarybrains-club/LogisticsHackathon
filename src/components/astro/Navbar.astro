@@ -2,8 +2,9 @@
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.jpg";
+import GlassFilter from "@/assets/glass-filter.svg";
 ---
-<nav class="bg-background fixed w-full z-20 top-0 start-0">
+<nav class="bg-background w-full z-20 top-0 start-0">
   <div class="max-w-screen-x1 flex flex-wrap items-center justify-between mx-auto py-2 px-4">
     <Image src={logoImage} alt="Binary brains logo" width="80" height="50" />
 
@@ -17,17 +18,16 @@ import logoImage from "@/assets/logo.jpg";
         </ul>
       </div>
 
-      <!-- Botón de registro SOLO visible en desktop -->
-      <Button >
+      <Button>
         <a
-       href="https://luma.com/a317pq6t"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Regístrate al evento Brainhack en Luma">
+          href="https://luma.com/a317pq6t"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Regístrate al evento Brainhack en Luma"
+        >
           Regístrate
         </a>
       </Button>
-      <!-- Botón hamburguesa SOLO para dispositivos móviles -->
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"
@@ -63,7 +63,7 @@ import logoImage from "@/assets/logo.jpg";
             href="#"
             class="block py-3 px-4 text-white hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-colors duration-200 font-medium"
           >
-            Home
+            Inicio
           </a>
         </li>
         <li>
@@ -71,7 +71,7 @@ import logoImage from "@/assets/logo.jpg";
             href="#"
             class="block py-3 px-4 text-white hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-colors duration-200 font-medium"
           >
-            About
+            Acerca de
           </a>
         </li>
         <li>
@@ -79,7 +79,7 @@ import logoImage from "@/assets/logo.jpg";
             href="#"
             class="block py-3 px-4 text-white hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-colors duration-200 font-medium"
           >
-            Challenges
+            Nosotros
           </a>
         </li>
         <li>
@@ -92,26 +92,33 @@ import logoImage from "@/assets/logo.jpg";
         </li>
       </ul>
 
+      <!-- Botón de registro en el menú móvil -->
       <div class="pt-4 border-t border-slate-700">
-        <Button >
-        <a
-          href="https://luma.com/a317pq6t"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Regístrate al evento Brainhack en Luma">
+        <Button>
+          <a
+            href="https://luma.com/a317pq6t"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Regístrate al evento Brainhack en Luma"
+          >
             Regístrate
-        </a>
-      </Button>
+          </a>
+        </Button>
       </div>
     </div>
   </div>
 </nav>
 
+<!-- Script para manejar el toggle del menú hamburguesa xd 🤓☝️-->
 <script>
+  // Esperar a que el DOM esté completamente cargado
   document.addEventListener("DOMContentLoaded", () => {
+    // Obtener el botón de toggle por su atributo data-collapse-toggle
     const toggleBtn = document.querySelector("[data-collapse-toggle]");
+    // Obtener el menú móvil
     const mobileMenu = document.getElementById("mobile-menu");
 
+    // Agregar event listener al botón hamburguesa brooooow 🍔
     toggleBtn.addEventListener("click", () => {
       // Alternar el menú móvil
       mobileMenu.classList.toggle("hidden");
