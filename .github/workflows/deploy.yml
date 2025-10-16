@@ -4,7 +4,7 @@ on:
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -13,8 +13,15 @@ permissions:
   id-token: write
 
 jobs:
+  check-linting:
+    name: Check linting, formatting and typing
+    permissions:
+      contents: read
+    uses: ./.github/workflows/lint.yml
+
   build:
     runs-on: ubuntu-latest
+    needs: [check-linting]
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
