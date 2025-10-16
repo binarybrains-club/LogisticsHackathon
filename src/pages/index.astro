@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Button } from "@/components/ui/button";
-import Counter from "@/components/astro/Counter.astro";
+import Counter from "@/components/astro/counter.astro";
 import { EVENT_DATE } from "@/utils/constants";
 ---
 <BaseLayout title="Logistics Hackathon">
@@ -10,8 +10,14 @@ import { EVENT_DATE } from "@/utils/constants";
 
     <Counter targetDate={EVENT_DATE} />
 
-    <Button>
-      Regístrate
-    </Button>
+    <Button >
+        <a
+       href="https://luma.com/a317pq6t"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Regístrate al evento Brainhack en Luma">
+          Regístrate
+        </a>
+      </Button>
   </div>
 </BaseLayout>
