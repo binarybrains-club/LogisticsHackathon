@@ -80,6 +80,7 @@
   --brand-blue500: oklch(53.778% 0.1491 252.581);
   --brand-blue-900: oklch(44.281% 0.16949 264.057);
   --brand-green-100: oklch(57.027% 0.13135 138.182);
+ main
 }
 
 .dark {
