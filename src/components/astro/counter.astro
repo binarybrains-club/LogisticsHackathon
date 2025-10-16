@@ -3,7 +3,7 @@ interface Props {
   targetDate?: string;
 }
 
-const { targetDate = "2025-12-31T23:59:59" } = Astro.props;
+const { targetDate } = Astro.props;
 ---
 
 <div class="flex gap-4 mb-8" id="countdown-container">
