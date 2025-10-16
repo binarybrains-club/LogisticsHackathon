@@ -1,6 +1,7 @@
 ---
 import backgroundVideo from "../assets/pool-dark.mp4";
 import "../styles/global.css";
+import Navbar from "@/components/astro/Navbar.astro";
 
 const DEFAULT_KEYWORDS = [
   "Logistics Hackathon",
@@ -84,7 +85,8 @@ const {
     </div>
 
     <div class="relative z-10 text-white min-h-screen p-10">
-		    <slot/>
+      <Navbar />
+      <slot />
     </div>
 
     <style>
@@ -100,6 +102,6 @@ const {
       .animate-waterEffect {
         animation: waterEffect 30s linear infinite;
       }
-</style>
+    </style>
   </body>
 </html>
