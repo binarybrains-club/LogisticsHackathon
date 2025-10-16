@@ -207,12 +207,6 @@
   position: absolute;
   inset: 0px;
   pointer-events: none;
-  z-index: 0;
-}
-
-.count-number {
-  position: relative;
-  z-index: 1;
 }
 
 .glass-border {
