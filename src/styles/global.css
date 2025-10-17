@@ -42,6 +42,11 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-glass-background: var(--glass-background);
+  --color-button-primary-bg: var(--primary);
+  --color-button-primary-text: var(--primary-foreground);
+  --color-button-secondary-bg: var(--secondary);
+  --color-button-secondary-text: var(--secondary-foreground);
+  --color-button-primary-hover-bg: var(--brand-green-100);
 }
 
 :root {
