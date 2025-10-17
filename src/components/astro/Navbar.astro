@@ -1,10 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
-import logoImage from "../../assets/logo.jpg";
+import logoImage from "@/assets/logo.jpg";
 ---
-<!-- Barra de navegación fija-->
-<nav class="bg-background fixed w-full z-20 top-0 start-0">
+<nav class="bg-background w-full z-20 top-0 start-0">
   <div class="max-w-screen-x1 flex flex-wrap items-center justify-between mx-auto py-2 px-4">
     <Image src={logoImage} alt="Binary brains logo" width="80" height="50" />
 
@@ -18,17 +17,16 @@ import logoImage from "../../assets/logo.jpg";
         </ul>
       </div>
 
-      <!-- Botón de registro SOLO visible en desktop -->
-      <Button >
+      <Button>
         <a
-       href="https://luma.com/a317pq6t"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Regístrate al evento Brainhack en Luma">
+          href="https://luma.com/a317pq6t"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Regístrate al evento Brainhack en Luma"
+        >
           Regístrate
         </a>
       </Button>
-      <!-- Botón hamburguesa SOLO para dispositivos móviles -->
       <button
         data-collapse-toggle="navbar-sticky"
         type="button"
@@ -37,7 +35,6 @@ import logoImage from "../../assets/logo.jpg";
         aria-expanded="false"
       >
         <span class="sr-only">Abrir menú principal</span>
-        <!-- Icono de hamburguesa 🤑 🍔 -->
         <svg
           class="w-5 h-5"
           aria-hidden="true"
@@ -57,17 +54,15 @@ import logoImage from "../../assets/logo.jpg";
     </div>
   </div>
 
-  <!-- Menú móvil desplegable SOLO visible en móvil -->
   <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700 shadow-lg">
     <div class="px-4 py-6 space-y-4">
-      <!-- Enlaces del menú móvil -->
       <ul class="space-y-3">
         <li>
           <a
             href="#"
             class="block py-3 px-4 text-white hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-colors duration-200 font-medium"
           >
-            Home
+            Inicio
           </a>
         </li>
         <li>
@@ -75,7 +70,7 @@ import logoImage from "../../assets/logo.jpg";
             href="#"
             class="block py-3 px-4 text-white hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-colors duration-200 font-medium"
           >
-            About
+            Acerca de
           </a>
         </li>
         <li>
@@ -83,7 +78,7 @@ import logoImage from "../../assets/logo.jpg";
             href="#"
             class="block py-3 px-4 text-white hover:bg-slate-700 hover:text-blue-400 rounded-lg transition-colors duration-200 font-medium"
           >
-            Challenges
+            Nosotros
           </a>
         </li>
         <li>
@@ -98,15 +93,16 @@ import logoImage from "../../assets/logo.jpg";
 
       <!-- Botón de registro en el menú móvil -->
       <div class="pt-4 border-t border-slate-700">
-        <Button >
-        <a
-          href="https://luma.com/a317pq6t"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Regístrate al evento Brainhack en Luma">
+        <Button>
+          <a
+            href="https://luma.com/a317pq6t"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Regístrate al evento Brainhack en Luma"
+          >
             Regístrate
-        </a>
-      </Button>
+          </a>
+        </Button>
       </div>
     </div>
   </div>

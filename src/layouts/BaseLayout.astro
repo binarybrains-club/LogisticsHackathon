@@ -1,14 +1,17 @@
 ---
-import backgroundVideo from "../assets/pool-dark.mp4";
-import "../styles/global.css";
-
+import "@/styles/global.css";
+import Navbar from "@/components/astro/Navbar.astro";
+import WaterBackground from "@/components/astro/WaterBackground.astro";
 const DEFAULT_KEYWORDS = [
   "Logistics Hackathon",
+  "Binary Brains",
+  "ASCM",
+  "UPIICSA",
 ];
 
 const ogImage = {
-  path: `favicon.svg`,
-  alt: "A logo of the hackathon event, Hacktion",
+  path: `/LogisticsHackathon/favicon.jpg`,
+  alt: "A logo of the hackathon event, Logistics hackathon",
 };
 
 interface Props {
@@ -42,7 +45,7 @@ const {
     {
       description && (
         <>
-          <meta property="og:description" content={description} />
+          <meta name="og:description" content={description} />
           <meta name="twitter:description" content={description} />
           <meta name="description" content={description} />
         </>
@@ -62,44 +65,11 @@ const {
     <meta name="theme-color" content="#172615">
   </head>
   <body class="overflow-y-auto bg-[#172615]">
-    <div class="fixed inset-0 -z-20 overflow-hidden">
-      <video
-        id="backgroundVideo"
-        autoplay
-        loop
-        muted
-        playsinline
-        class="object-cover w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-      </video>
-    </div>
+    <WaterBackground />
 
-    <div class="fixed inset-0 bg-[#3CBD2C] mix-blend-multiply pointer-events-none -z-10"></div>
-
-    <div
-      id="waterTexture"
-      class="fixed inset-0 bg-[url('/LogisticsHackathon/pool-dark.png')] bg-repeat bg-[length:300%_300%] opacity-40 animate-waterEffect pointer-events-none -z-[9]"
-    >
-    </div>
-
-    <div class="relative z-10 text-white min-h-screen p-10">
+    <div class="relative z-10 text-white min-h-screen">
+      <Navbar />
       <slot />
     </div>
-
-    <style>
-      @keyframes waterEffect {
-        0% {
-          background-position: 0 0;
-        }
-        100% {
-          background-position: 100% 100%;
-        }
-      }
-
-      .animate-waterEffect {
-        animation: waterEffect 30s linear infinite;
-      }
-    </style>
   </body>
 </html>
