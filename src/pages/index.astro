@@ -2,16 +2,16 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Button } from "@/components/ui/button";
 import { EVENT_DATE } from "@/utils/constants";
-import Countdown from "@/components/react/Countdown";
 import Aboutus from "@/components/astro/Aboutus.astro";
+import Counter from "@/components/astro/Counter.astro";
 ---
 <BaseLayout title="Logistics Hackathon">
   <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
     <h1 class="text-6xl font-bold text-white mb-8">Logistics Hackathon</h1>
 
-    <Countdown client:idle targetDate={EVENT_DATE} />
+    <Counter targetDate={EVENT_DATE} />
 
-    <Button variant="translucent">
+    <Button variant="primary">
       <a
         href="https://luma.com/a317pq6t"
         target="_blank"
