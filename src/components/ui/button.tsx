@@ -9,7 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+        primary: "bg-primary text-primary-foreground shadow-xs hover:bg-(--color-button-primary-hover-bg)",
         secondary: "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/90",
         translucent:
           "bg-[rgba(255,255,255,0.08)] hover:bg-[rgba(255,255,255,0.64)] hover:text-[rgb(19,21,23)] transition-all duration-300 ease-[cubic-bezier(.4,0,.2,1)]",
