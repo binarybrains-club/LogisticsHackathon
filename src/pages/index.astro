@@ -3,6 +3,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Button } from "@/components/ui/button";
 import { EVENT_DATE } from "@/utils/constants";
 import Aboutus from "@/components/astro/Aboutus.astro";
+import Communities from "@/components/astro/communities.astro";
 import Counter from "@/components/astro/Counter.astro";
 ---
 <BaseLayout title="Logistics Hackathon">
@@ -27,5 +28,8 @@ import Counter from "@/components/astro/Counter.astro";
     id="AboutUs"
   >
     <Aboutus />
+  </div>
+  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
+    <Communities />
   </div>
 </BaseLayout>
