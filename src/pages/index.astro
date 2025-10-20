@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { EVENT_DATE } from "@/utils/constants";
 import Countdown from "@/components/react/Countdown";
 import Aboutus from "@/components/astro/Aboutus.astro";
+import Communities from "@/components/astro/communities.astro";
 ---
 <BaseLayout title="Logistics Hackathon">
   <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
@@ -11,7 +12,7 @@ import Aboutus from "@/components/astro/Aboutus.astro";
 
     <Countdown client:idle targetDate={EVENT_DATE} />
 
-    <Button variant="translucent">
+    <button variant="translucent">
       <a
         href="https://luma.com/a317pq6t"
         target="_blank"
@@ -20,9 +21,12 @@ import Aboutus from "@/components/astro/Aboutus.astro";
       >
         Regístrate
       </a>
-    </Button>
+    </button>
   </div>
   <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
     <Aboutus />
+  </div>
+  <div class="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] gap-8">
+    <Communities />
   </div>
 </BaseLayout>
