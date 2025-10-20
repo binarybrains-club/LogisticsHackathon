@@ -1,0 +1,110 @@
+---
+interface Props {
+  targetDate?: string;
+}
+
+const { targetDate = "2025-12-31T23:59:59" } = Astro.props;
+---
+
+<!-- Contador -->
+<div class="flex gap-4 mb-8" id="countdown-container">
+  <!-- Days  -->
+  <div class="w-16 h-26 md:w-24 md:h-32" id="days-counter">
+    <div
+      class="w-16 h-18 md:w-24 md:h-26 bg-(--brand-green-100) rounded-lg grid place-items-center"
+    >
+      <p class="text-3xl md:text-5xl text-white text-center font-bold count-number">00</p>
+    </div>
+    <p class="text-center mt-2 text-sm md:text-lg font-bold count-label">Días</p>
+  </div>
+
+  <!-- Hours  -->
+  <div class="w-16 h-26 md:w-24 md:h-32" id="hours-counter">
+    <div
+      class="w-16 h-18 md:w-24 md:h-26 bg-(--brand-green-100) rounded-lg grid place-items-center"
+    >
+      <p class="text-3xl md:text-5xl text-white text-center font-bold count-number">00</p>
+    </div>
+    <p class="text-center mt-2 text-sm md:text-lg font-bold count-label">Horas</p>
+  </div>
+
+  <!-- Minutes -->
+  <div class="w-16 h-26 md:w-24 md:h-32" id="minutes-counter">
+    <div
+      class="w-16 h-18 md:w-24 md:h-26 bg-(--brand-green-100) rounded-lg grid place-items-center"
+    >
+      <p class="text-3xl md:text-5xl text-white text-center font-bold count-number">00</p>
+    </div>
+    <p class="text-center mt-2 text-sm md:text-lg font-bold count-label">Minutos</p>
+  </div>
+
+  <!-- Seconds  -->
+  <div class="w-16 h-26 md:w-24 md:h-32" id="seconds-counter">
+    <div
+      class="w-16 h-18 md:w-24 md:h-26 bg-(--brand-green-100) rounded-lg grid place-items-center"
+    >
+      <p class="text-3xl md:text-5xl text-white text-center font-bold count-number">00</p>
+    </div>
+    <p class="text-center mt-2 text-sm md:text-lg font-bold count-label">Segundos</p>
+  </div>
+</div>
+
+<script define:vars={{ targetDate }}>
+  // Función para actualizar el countdown
+  function updateCountdown() {
+    const target = new Date(targetDate).getTime();
+    const now = new Date().getTime();
+    const timeLeft = target - now;
+
+    if (timeLeft > 0) {
+      // Calcular días, horas, minutos y segundos
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      // Actualizar los contadores
+      const daysCounter = document.getElementById("days-counter");
+      const hoursCounter = document.getElementById("hours-counter");
+      const minutesCounter = document.getElementById("minutes-counter");
+      const secondsCounter = document.getElementById("seconds-counter");
+
+      if (daysCounter) {
+        const daysNumber = daysCounter.querySelector(".count-number");
+        if (daysNumber) daysNumber.textContent = days.toString().padStart(2, "0");
+      }
+
+      if (hoursCounter) {
+        const hoursNumber = hoursCounter.querySelector(".count-number");
+        if (hoursNumber) hoursNumber.textContent = hours.toString().padStart(2, "0");
+      }
+
+      if (minutesCounter) {
+        const minutesNumber = minutesCounter.querySelector(".count-number");
+        if (minutesNumber) minutesNumber.textContent = minutes.toString().padStart(2, "0");
+      }
+
+      if (secondsCounter) {
+        const secondsNumber = secondsCounter.querySelector(".count-number");
+        if (secondsNumber) secondsNumber.textContent = seconds.toString().padStart(2, "0");
+      }
+    } else {
+      // El tiempo se agotó papito :(
+      const daysCounter = document.getElementById("days-counter");
+      const hoursCounter = document.getElementById("hours-counter");
+      const minutesCounter = document.getElementById("minutes-counter");
+      const secondsCounter = document.getElementById("seconds-counter");
+
+      [daysCounter, hoursCounter, minutesCounter, secondsCounter].forEach((counter) => {
+        if (counter) {
+          const number = counter.querySelector(".count-number");
+          if (number) number.textContent = "00";
+        }
+      });
+    }
+  }
+
+  // Actualizar inmediatamente y luego cada segundo
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
