@@ -8,8 +8,7 @@ export type Community = {
 export const COMMUNITIES: Community[] = [
   {
     alt: "ASCM",
-    src:
-      "/LogisticsHackathon/communities/ASCM_LOGOS_STUDENTFORUM_COLOR_W_UPIICSA.png",
+    src: "/LogisticsHackathon/communities/ASCM_LOGOS_STUDENTFORUM_COLOR_W_UPIICSA.png",
     width: 200,
     height: 100,
   },

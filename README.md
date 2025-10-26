@@ -35,14 +35,13 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 └── package.json
 ```
 
-Astro busca archivos `.astro` o `.md` en el directorio `src/pages/`. Cada página
-se expone como una ruta basada en su nombre de archivo.
+Astro busca archivos `.astro` o `.md` en el directorio `src/pages/`. Cada página se expone como una
+ruta basada en su nombre de archivo.
 
-No hay nada especial sobre `src/components/`, pero ahí es donde nos gusta
-colocar cualquier componente de Astro/React/Vue/Svelte/Preact.
+No hay nada especial sobre `src/components/`, pero ahí es donde nos gusta colocar cualquier
+componente de Astro/React/Vue/Svelte/Preact.
 
-Cualquier recurso estático, como imágenes, puede colocarse en el directorio
-`public/`.
+Cualquier recurso estático, como imágenes, puede colocarse en el directorio `public/`.
 
 ## 🧞 Comandos
 

@@ -216,10 +216,7 @@
 
 .glass-border {
   @apply rounded-2xl w-full h-full inset-0 absolute pointer-events-none;
-  box-shadow:
-    inset 0 0 0 0.5px #ffffff80,
-    inset 0 1px 3px #ffffff40,
-    0 1px 4px #00000059;
+  box-shadow: inset 0 0 0 0.5px #ffffff80, inset 0 1px 3px #ffffff40, 0 1px 4px #00000059;
   mask:
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
