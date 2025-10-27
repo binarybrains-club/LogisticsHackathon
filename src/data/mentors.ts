@@ -11,7 +11,7 @@ export const MENTORS: Mentor[] = [
       "Frontend Development",
       "Preact",
       "React",
-      "Angular",
+      "Astro",
       "Deno",
       "Node.js",
       "Tailwindcss",
@@ -19,13 +19,14 @@ export const MENTORS: Mentor[] = [
       "CSS",
       "Javascript/Typescript",
     ],
-    role: "Consultor Senior @ itprove | Frontend Lead @ BinaryBrains",
+    role: "Consultor @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
     profilePath: "/LogisticsHackathon/mentors/gamaliel.jpeg",
   },
   {
     name: "Eduardo Dominguez Navarrete",
-    technologies: [],
-    role: "Consultor Senior @ itprove | Frontend Lead @ BinaryBrains",
-    profilePath: "/LogisticsHackathon/mentors/gamaliel.jpeg",
+    technologies: ["Intelgiencia Artificial", "Python", "Javascript/Typescript", "Java"],
+    role:
+      "Delivery Consultant Data & AI and Sustainability @ IBM | AI Lead & Co-founder @ BinaryBrains",
+    profilePath: "/LogisticsHackathon/mentors/eduardo.jpg",
   },
 ];

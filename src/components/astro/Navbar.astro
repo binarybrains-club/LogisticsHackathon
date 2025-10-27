@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.png";
+import { LUMA_LINK } from "@/utils/constants";
 ---
 <nav class="liquid-glass w-full relative md:sticky top-4">
   <div class="glass pl-5 pr-8 py-4">
@@ -13,15 +14,15 @@ import logoImage from "@/assets/logo.png";
       />
       <div class="flex-1 mt-1 mb-4 md:my-0">
         <ul class="flex flex-col md:flex-row justify-end font-medium text-white">
-          <li><a href="#" class="block py-2 px-3 hover:text-primary">Fecha</a></li>
           <li><a href="#AboutUs" class="block py-2 px-3 hover:text-primary">Acerca de</a></li>
-          <li><a href="#" class="block py-2 px-3 hover:text-primary">Retos</a></li>
-          <li><a href="#" class="block py-2 px-3 hover:text-primary">Sponsors</a></li>
+          <li><a href="#Communities" class="block py-2 px-3 hover:text-primary">Acerca de</a></li>
+          <li><a href="#Sponsors" class="block py-2 px-3 hover:text-primary">Sponsors</a></li>
+          <li><a href="#Mentors" class="block py-2 px-3 hover:text-primary">Mentores</a></li>
         </ul>
       </div>
-      <Button className="w-full md:w-[185px] md:h-9 md:px-4 md:py-2 has-[>svg]:px-3">
+      <Button variant="primary">
         <a
-          href="https://luma.com/a317pq6t"
+          href={LUMA_LINK}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Regístrate al evento Logistics Hackathon en Luma"
