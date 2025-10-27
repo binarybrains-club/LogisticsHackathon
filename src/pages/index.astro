@@ -6,6 +6,7 @@ import Aboutus from "@/components/astro/Aboutus.astro";
 import Communities from "@/components/astro/communities.astro";
 import Counter from "@/components/astro/Counter.astro";
 import Sponsors from "@/components/astro/Sponsors.astro";
+import Mentors from "@/components/astro/Mentors.astro";
 ---
 <BaseLayout title="Logistics Hackathon">
   <div
@@ -27,10 +28,11 @@ import Sponsors from "@/components/astro/Sponsors.astro";
     </Button>
   </div>
   <div
-    class="flex flex-col items-center justify-center gap-8"
+    class="flex flex-col items-center justify-center gap-8 pb-8"
   >
     <Aboutus />
     <Communities />
     <Sponsors />
+    <Mentors />
   </div>
 </BaseLayout>
