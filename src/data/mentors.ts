@@ -24,7 +24,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Eduardo Dominguez Navarrete",
-    technologies: ["Intelgiencia Artificial", "Python", "Javascript/Typescript", "Java"],
+    technologies: ["Inteligencia Artificial", "Python", "Javascript/Typescript", "Java"],
     role:
       "Delivery Consultant Data & AI and Sustainability @ IBM | AI Lead & Co-founder @ BinaryBrains",
     profilePath: "/LogisticsHackathon/mentors/eduardo.jpg",

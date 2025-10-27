@@ -25,7 +25,7 @@ export const SPONSORS: Sponsors[] = [
     height: 100.,
   },
   {
-    alt: "JP",
+    alt: "Pitch Jams",
     src: "/LogisticsHackathon/sponsors/PJ.png",
     width: 200,
     height: 100.,
