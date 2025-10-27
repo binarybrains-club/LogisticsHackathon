@@ -3,6 +3,7 @@ export type Community = {
   alt: string;
   height: number;
   width: number;
+  className?: string;
 };
 
 export const COMMUNITIES: Community[] = [
@@ -11,6 +12,7 @@ export const COMMUNITIES: Community[] = [
     src: "/LogisticsHackathon/communities/ASCM_LOGOS_STUDENTFORUM_COLOR_W_UPIICSA.png",
     width: 200,
     height: 100,
+    className: "h-14",
   },
   {
     alt: "Binary Brains",

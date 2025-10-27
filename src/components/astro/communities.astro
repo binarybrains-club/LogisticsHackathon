@@ -22,7 +22,9 @@ import { COMMUNITIES } from "@/data/communities.ts";
               alt={community.alt}
               width={community.width}
               height={community.height}
-              class="h-24 w-min object-contain transition-all duration-300 transform hover:scale-105"
+              class={`${
+                community.className ?? "h-24"
+              } w-min object-contain transition-all duration-300 transform hover:scale-105`}
             />
           ))
         }
