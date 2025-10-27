@@ -24,8 +24,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Eduardo Dominguez Navarrete",
-    technologies: [
-    ],
+    technologies: [],
     role: "Consultor Senior @ itprove | Frontend Lead @ BinaryBrains",
     profilePath: "/LogisticsHackathon/mentors/gamaliel.jpeg",
   },
