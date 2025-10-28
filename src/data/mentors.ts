@@ -49,15 +49,15 @@ export const MENTORS: Mentor[] = [
     role: "AI Engineer @ IBM",
     profilePath: "/LogisticsHackathon/mentors/erandi.jpg",
   },
-    {
+  {
     name: "Manuel Ortiz",
     technologies: [
       "Azure",
       "Cloud Computing",
       "Xcode",
       "Swift",
-      "Devops", 
-      "Kubernetes", 
+      "Devops",
+      "Kubernetes",
     ],
     role: "Microsoft DevOps MVP | Cloud & Software Engineer",
     profilePath: "/LogisticsHackathon/mentors/manu.jpeg",
