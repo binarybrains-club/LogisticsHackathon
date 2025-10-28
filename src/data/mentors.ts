@@ -49,7 +49,7 @@ export const MENTORS: Mentor[] = [
     role: "AI Engineer @ IBM",
     profilePath: "/LogisticsHackathon/mentors/erandi.jpg",
   },
-    {
+  {
     name: "Manuel Ortiz",
     technologies: [
       "Azure",
@@ -61,5 +61,15 @@ export const MENTORS: Mentor[] = [
     ],
     role: "Microsoft DevOps MVP | Cloud & Software Engineer",
     profilePath: "/LogisticsHackathon/mentors/manu.jpeg",
+  },
+  {
+    name: "Lenin Facio (Mr. Faccio)",
+    technologies: [
+      "Pentesting web",
+      "OSINT",
+      "Hacking",
+    ],
+    role: "Pentester at Haak Cybersecurity Consulting | Co-founder @cybertech_comu",
+    profilePath: "/LogisticsHackathon/mentors/lenin.jpeg",
   },
 ];
