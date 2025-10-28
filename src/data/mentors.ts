@@ -58,7 +58,6 @@ export const MENTORS: Mentor[] = [
       "Swift",
       "Devops", 
       "Kubernetes",
- 
     ],
     role: "Microsoft DevOps MVP | Cloud & Software Engineer",
     profilePath: "/LogisticsHackathon/mentors/manu.jpeg",
