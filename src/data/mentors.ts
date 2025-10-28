@@ -56,7 +56,7 @@ export const MENTORS: Mentor[] = [
       "Cloud Computing",
       "Xcode",
       "Swift",
-      "Devops", 
+      "Devops",
       "Kubernetes",
     ],
     role: "Microsoft DevOps MVP | Cloud & Software Engineer",
