@@ -20,7 +20,7 @@ export const MENTORS: Mentor[] = [
       "Backend Development",
       "Django",
       "SQL",
-      "Power Platform"
+      "Power Platform",
     ],
     role: "Consultor @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
     profilePath: "gamaliel.jpeg",
