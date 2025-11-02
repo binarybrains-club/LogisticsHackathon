@@ -10,7 +10,6 @@ export const MENTORS: Mentor[] = [
     technologies: [
       "Frontend Development",
       "Preact",
-      "React",
       "Astro",
       "Deno",
       "Node.js",
@@ -18,6 +17,10 @@ export const MENTORS: Mentor[] = [
       "HTML",
       "CSS",
       "Javascript/Typescript",
+      "Backend Development",
+      "Django",
+      "SQL",
+      "Power Platform"
     ],
     role: "Consultor @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
     profilePath: "gamaliel.jpeg",
