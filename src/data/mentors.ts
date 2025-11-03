@@ -6,25 +6,21 @@ export type Mentor = {
 };
 export const MENTORS: Mentor[] = [
   {
-    name: "Eduardo Gamaliel Garcia Zavala",
+    name: "Bryan Castro Sánchez",
+    role: "Analista de sistemas @ Binary Brains | Founder @ Binary Brains | Backend developer",
     skills: [
-      "Frontend Development",
-      "Preact",
-      "Astro",
-      "Deno",
-      "Node.js",
-      "Tailwindcss",
-      "HTML",
-      "CSS",
-      "Javascript/Typescript",
-      "Backend Development",
-      "Django",
+      "Java",
+      "Spring boot",
       "SQL",
-      "Power Platform",
+      "PostgreSQL",
+      "Python",
+      "Kotlin",
+      "Jetpack compose",
+      "BPMN 2.0",
+      "Figma",
+      "UX/UI",
     ],
-    role:
-      "Consultor Power Platform @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
-    profilePath: "gamaliel.jpeg",
+    profilePath: "untalbry.jpg",
   },
   {
     name: "Eduardo Dominguez Navarrete",
@@ -39,6 +35,24 @@ export const MENTORS: Mentor[] = [
     role:
       "Delivery Consultant Data & AI and Sustainability @ IBM | AI Lead & Co-founder @ BinaryBrains",
     profilePath: "eduardo.jpg",
+  },
+  {
+    name: "Eduardo Gamaliel Garcia Zavala",
+    skills: [
+      "Frontend Development",
+      "Preact",
+      "Astro",
+      "Deno",
+      "Node.js",
+      "Tailwindcss",
+      "HTML",
+      "CSS",
+      "Javascript/Typescript",
+      "Power Platform",
+    ],
+    role:
+      "Consultor Power Platform @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
+    profilePath: "gamaliel.jpeg",
   },
   {
     name: "Erandi Abigaíl García",
