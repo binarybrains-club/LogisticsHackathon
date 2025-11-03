@@ -143,7 +143,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Sergio Castillo Matías",
-    role: "Dirección de Realaciones Públicas @ Empresarios por el Desarrollo Social de México",
+    role: "Dirección de Relaciones Públicas @ Empresarios por el Desarrollo Social de México",
     skills: ["Mejora Continua en los procesos", "Gestión de Proyectos"],
     profilePath: "sergio_castillo.png",
   },
