@@ -22,7 +22,7 @@ export const MENTORS: Mentor[] = [
       "SQL",
       "Power Platform",
     ],
-    role: "Consultor @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
+    role: "Consultor Power Platform @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
     profilePath: "gamaliel.jpeg",
   },
   {
