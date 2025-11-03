@@ -1,13 +1,13 @@
 export type Mentor = {
   name: string;
-  technologies: string[];
+  skills: string[];
   role: string;
   profilePath: string;
 };
 export const MENTORS: Mentor[] = [
   {
     name: "Eduardo Gamaliel Garcia Zavala",
-    technologies: [
+    skills: [
       "Frontend Development",
       "Preact",
       "Astro",
@@ -22,12 +22,12 @@ export const MENTORS: Mentor[] = [
       "SQL",
       "Power Platform",
     ],
-    role: "Consultor @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
+    role: "Consultor Power Platform @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
     profilePath: "gamaliel.jpeg",
   },
   {
     name: "Eduardo Dominguez Navarrete",
-    technologies: [
+    skills: [
       "Inteligencia Artificial",
       "Python",
       "Javascript/Typescript",
@@ -41,7 +41,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Erandi Abigaíl García",
-    technologies: [
+    skills: [
       "Python",
       "SQL",
       "Javascript",
@@ -54,7 +54,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Manuel Ortiz",
-    technologies: [
+    skills: [
       "Azure",
       "Cloud Computing",
       "Xcode",
@@ -67,7 +67,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Lenin Facio (Mr. Faccio)",
-    technologies: [
+    skills: [
       "Pentesting web",
       "OSINT",
       "Hacking",
@@ -78,7 +78,7 @@ export const MENTORS: Mentor[] = [
   {
     name: "Jocelyn Adonay Cerna Camacho ",
     role: "Consutlor @ LDM",
-    technologies: [
+    skills: [
       "Planeación de Demanda",
       "Control de Inventarios",
       "Optimización de Cadenas de Suministro",
@@ -93,7 +93,7 @@ export const MENTORS: Mentor[] = [
   {
     name: "Jorge Evaristo Pardo Ruíz",
     role: "Consultor Sr. @ LDM",
-    technologies: [
+    skills: [
       "Gestión de Proyectos Estratégicos",
       "Metologías Ágiles",
       "Proyectos Híbridos",
@@ -111,7 +111,7 @@ export const MENTORS: Mentor[] = [
   {
     name: "José Arturo Gómez Arrucha",
     role: "Gerente de Proyectos @ LDM",
-    technologies: [
+    skills: [
       "Gestión de Procesos",
       "Optimización de Cadena de Suministro",
       "Implementación de Tecnología",
@@ -128,7 +128,7 @@ export const MENTORS: Mentor[] = [
   {
     name: "Mirka Lorena Flores García",
     role: "Integrante @ Empresarios por el Desarrollo Social de México",
-    technologies: [
+    skills: [
       "Liderazgo",
       "Autoconfianza",
       "Marca Personal",
@@ -142,14 +142,14 @@ export const MENTORS: Mentor[] = [
   {
     name: "Sergio Castillo Matías",
     role: "Dirección de Realaciones Públicas @ Empresarios por el Desarrollo Social de México",
-    technologies: ["Mejora Continua en los procesos", "Gestión de Proyectos"],
+    skills: ["Mejora Continua en los procesos", "Gestión de Proyectos"],
     profilePath: "sergio_castillo.png",
   },
   {
     name: "Brian David González Domínguez",
     role:
       "Director de Eventos y Logística de Empresarios @ Empresarios Por el Desarrollo Social de México",
-    technologies: [
+    skills: [
       "Habilidades Sociales y Directivas",
       "Liderazgo",
       "Speaking",
@@ -162,14 +162,14 @@ export const MENTORS: Mentor[] = [
   {
     name: "Regina Palacios Cid",
     role: "Integrante @ Empresarios Por el Desarrollo Social de México",
-    technologies: ["Resolución de Conflictos", "Relaciones públicas", "Liderazgo"],
+    skills: ["Resolución de Conflictos", "Relaciones públicas", "Liderazgo"],
     profilePath: "regina_palacios.png",
   },
   {
     name: "Eduardo Francisco Flores Ortiz",
     role:
       "Sub. Vinculación Empresarial Internacional @ Empresarios Por el Desarrollo Social de México",
-    technologies: [
+    skills: [
       "Negociación y creación de alianzas",
       "Planeación Estratégica",
       "Interculturalidad",
@@ -179,10 +179,33 @@ export const MENTORS: Mentor[] = [
   {
     name: "Raúl León Guzmán",
     role: "Presidente Nacional @ Empresarios Por El Desarrollo Social de México",
-    technologies: [
+    skills: [
       "Habilidades de Negociación",
       "Estrategias de capitalización",
     ],
     profilePath: "raul_leon.png",
+  },
+  {
+    name: "Carlos Emilio Vázquez Pérez",
+    role: "Vicepresidente @ Empresarios Por el Desarrollo Social de México",
+    skills: [
+      "Gestión empresarial",
+      "Relaciones Públicas",
+      "Estrategia",
+      "Liderazgo",
+    ],
+    profilePath: "carlos_emilio.png",
+  },
+  {
+    name: "Karen Paola Alanís Alcántar",
+    role: "Integrante @ Empresarios Por El Desarrollo Social de México",
+    skills: [
+      "Internacionalización",
+      "Gestión de proyectos",
+      "Liderazgo",
+      "Resolución de conflictos",
+      "Comunicación efectiva",
+    ],
+    profilePath: "karen_paola.png",
   },
 ];
