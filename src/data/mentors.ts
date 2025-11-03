@@ -128,7 +128,8 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Mirka Lorena Flores García",
-    role: "Integrante @ Empresarios por el Desarrollo Social de México",
+    role:
+      "Coordinadora de Vinculación Empresarial Internacional @ Empresarios por el Desarrollo Social de México",
     skills: [
       "Liderazgo",
       "Autoconfianza",
@@ -162,7 +163,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Regina Palacios Cid",
-    role: "Integrante @ Empresarios Por el Desarrollo Social de México",
+    role: "Directora de Mujeres Empresarias @ Empresarios Por el Desarrollo Social de México",
     skills: ["Resolución de Conflictos", "Relaciones públicas", "Liderazgo"],
     profilePath: "regina_palacios.png",
   },
@@ -199,7 +200,8 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Karen Paola Alanís Alcántar",
-    role: "Integrante @ Empresarios Por El Desarrollo Social de México",
+    role:
+      "Directora de Vinculación Empresarial Internacional @ Empresarios Por El Desarrollo Social de México",
     skills: [
       "Internacionalización",
       "Gestión de proyectos",
