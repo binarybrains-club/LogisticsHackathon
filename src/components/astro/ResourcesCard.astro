@@ -13,19 +13,18 @@ const { resource } = Astro.props;
   <div class="glass">
     <div class="bg-gray-500/20 flex flex-col px-4 pb-4 gap-2">
       <Image
-        src={`/LogisticsHackathon/companies/${resource.company.logoPath}`}
+        src={`/LogisticsHackathon/sponsors/${resource.company.logoPath}`}
         alt={resource.company.name}
         width={96}
         height={96}
         class="h-24 object-contain"
       />
       <h2 class="text-2xl font-semibold">{resource.title}</h2>
-      <p class="text-sm font-light">{resource.description}</p>
     </div>
     <div class="flex flex-col p-4 space-y-3">
       {
         resource.links.map((link) => (
-          <a href={link.href} class="flex gap-2" target="_blank">
+          <a href={encodeURI(link.href)} class="flex gap-2" target="_blank">
             <span class="flex-1">
               {link.label}
             </span>

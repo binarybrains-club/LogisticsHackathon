@@ -4,7 +4,6 @@ type Judge = {
   profilePath: string;
   className?: string;
 };
-
 export const JUDGES: Judge[] = [
   {
     name: "José Jesús Guzmán (BrujeriaTech)",
@@ -54,5 +53,17 @@ export const JUDGES: Judge[] = [
     role: "Subdirector de Operaciones @ LDM",
     profilePath: "LDM.png",
     className: "",
+  },
+  {
+    name: "Dr. Pedro Avelino Arenas",
+    role: "Jefe de Programa Académico de Ingeniería Industrial",
+    profilePath: "pedro.png",
+    className: "to-yellow-900/40",
+  },
+  {
+    name: "Ing. Yventz Entzana Garduño",
+    role: "Jefe de Programa Académico de Ciencias de la Computación",
+    profilePath: "yv.png",
+    className: "to-zinc-950/80",
   },
 ];

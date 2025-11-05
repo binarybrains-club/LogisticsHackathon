@@ -7,10 +7,71 @@ import { RESOURCES } from "@/data/resources";
   <div
     class="flex flex-col items-center justify-center min-h-[calc(100vh-14rem)] md:min-h-[calc(50vh-4rem)] gap-8"
   >
+    <h1 class="text-6xl font-bold text-white mb-8">Reto</h1>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div
+      class="rounded-2xl border border-white/20 shadow-2xl overflow-hidden"
+    >
+      <div class="bg-gray-500/20 px-8 py-2 border-b border-white/20">
+        <h2 class="text-sm font-semibold text-gray-200 text-left drop-shadow-md">
+          Problema 2: El Caos del Flujo de Mercancía
+        </h2>
+      </div>
+      <div
+        class="p-8"
+      >
+        <p class="text-left text-gray-200 text-m font-light leading-relaxed">
+          El flujo de mercancía en la tienda presenta graves ineficiencias desde la recepción hasta
+          la reposición. No existe una programación de entregas por parte del CEDIS, los camiones
+          llegan sin aviso y con productos mezclados, lo que genera demoras en la separación. El
+          surtido en el piso de venta es reactivo y desorganizado, dejando mercancía necesaria en
+          bodega por días. Además, la falta de herramientas tecnológicas obliga a depender de
+          procesos manuales y comunicación verbal, dificultando la gestión del inventario y la
+          priorización de tareas.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="rounded-2xl border border-white/20 shadow-2xl overflow-hidden"
+    >
+      <div class="bg-gray-500/20 px-8 py-2 border-b border-white/20">
+        <h2 class="text-sm font-semibold text-gray-200 text-left drop-shadow-md">
+          Problema 3: Sobreinventario y Venta Perdida
+        </h2>
+      </div>
+      <div
+        class="p-8"
+      >
+        <p class="text-left text-gray-200 text-m font-light leading-relaxed">
+          Las tiendas de *Calzando a México* enfrentan una fuerte desconexión entre su inventario y
+          las ventas: hay sobreinventario en bodega, pero los clientes no encuentran los modelos o
+          tallas que buscan. La gestión se complica por un exceso de SKUs, un sistema de inventario
+          poco confiable que genera productos fantasma y conteos manuales infrecuentes, además de
+          una acumulación de mercancía dañada o descontinuada sin estrategia de salida. Esta
+          combinación provoca pérdidas de venta, espacios saturados y una operación ineficiente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div
+    class="flex flex-col items-center justify-center min-h-[calc(100vh-14rem)] md:min-h-[calc(50vh-4rem)] gap-8"
+  >
     <h1 class="text-6xl font-bold text-white mb-8">Recursos</h1>
   </div>
 
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-    {RESOURCES.map((resource) => <ResourcesCard {resource} />)}
+  <section
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8"
+  >
+    {
+      RESOURCES.map((resource) => (
+        <div class="break-inside-avoid">
+          <ResourcesCard {resource} />
+        </div>
+      ))
+    }
   </section>
 </BaseLayout>
