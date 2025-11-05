@@ -11,7 +11,7 @@ export const RESOURCES: Resource[] = [
   {
     company: {
       name: "IBM",
-      logoPath: "IBM_logo.png",
+      logoPath: "IBM.png",
     },
     title: "Learning Path: AI - IBM Skills Build",
     description:
@@ -32,7 +32,7 @@ export const RESOURCES: Resource[] = [
   {
     company: {
       name: "IBM",
-      logoPath: "IBM_logo.png",
+      logoPath: "IBM.png",
     },
     title: "Learning Path:  JavaScript Web Development -IBM Skills Build",
     description:
@@ -44,5 +44,14 @@ export const RESOURCES: Resource[] = [
         label: "Web Development: Learn JavaScript",
       },
     ],
+  },
+  {
+    company: {
+      name: "LDM",
+      logoPath: "LDM.png",
+    },
+    title: "",
+    description: "",
+    links: [],
   },
 ];
