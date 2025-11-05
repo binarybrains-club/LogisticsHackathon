@@ -19,6 +19,7 @@ export const MENTORS: Mentor[] = [
       "BPMN 2.0",
       "Figma",
       "UX/UI",
+      "Github",
     ],
     profilePath: "untalbry.jpg",
   },
@@ -31,6 +32,7 @@ export const MENTORS: Mentor[] = [
       "Java",
       "Watsonx AI",
       "Watsonx Orchestrate",
+      "Github",
     ],
     role:
       "Delivery Consultant Data & AI and Sustainability @ IBM | AI Lead & Co-founder @ BinaryBrains",
