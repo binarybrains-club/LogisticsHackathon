@@ -45,7 +45,7 @@ export const JUDGES: Judge[] = [
   },
   {
     name: "Jocelyn Adonay Cerna Camacho ",
-    role: "Consutlor @ LDM",
+    role: "Consultor @ LDM",
     profilePath: "jocelyn_adonay.png",
     className: "to-stone-300/30",
   },

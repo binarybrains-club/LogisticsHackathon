@@ -8,6 +8,7 @@ import Counter from "@/components/astro/Counter.astro";
 import Sponsors from "@/components/astro/Sponsors.astro";
 import Mentors from "@/components/astro/Mentors.astro";
 import Judges from "@/components/astro/Judges.astro";
+import { UploadProjectButton } from "@/components/react/UploadProject";
 ---
 <BaseLayout title="Logistics Hackathon">
   <div
@@ -17,16 +18,19 @@ import Judges from "@/components/astro/Judges.astro";
 
     <Counter targetDate={EVENT_DATE} />
 
-    <Button variant="primary">
-      <a
-        href={LUMA_LINK}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Regístrate al evento Brainhack en Luma"
-      >
-        Regístrate
-      </a>
-    </Button>
+    <div class="flex gap-4">
+      <Button variant="primary">
+        <a
+          href={LUMA_LINK}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Regístrate al evento Brainhack en Luma"
+        >
+          Regístrate
+        </a>
+      </Button>
+      <UploadProjectButton client:idle />
+    </div>
   </div>
   <div
     class="flex flex-col items-center justify-center gap-8 pb-8"
