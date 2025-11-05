@@ -12,7 +12,7 @@ import { Image } from "astro:assets";
     {
       JUDGES.map((judge) => (
         <div class="liquid-glass relative">
-          <div class="glass flex flex-col">
+          <div class="glass flex flex-col max-h-72 h-full">
             <Image
               src={`/LogisticsHackathon/judges/${judge.profilePath}`}
               alt={judge.name}

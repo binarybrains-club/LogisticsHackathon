@@ -2,6 +2,7 @@
 import "@/styles/global.css";
 import Navbar from "@/components/astro/Navbar.astro";
 import WaterBackground from "@/components/astro/WaterBackground.astro";
+import { ClientRouter } from "astro:transitions";
 const DEFAULT_KEYWORDS = [
   "Logistics Hackathon",
   "Binary Brains",
@@ -63,11 +64,12 @@ const {
 
     <meta name="keywords" content={keywords.join(", ")} />
     <meta name="theme-color" content="#172615">
+    <ClientRouter />
   </head>
   <body class="overflow-y-auto bg-[#172615]">
     <WaterBackground />
 
-    <div class="relative z-10 text-white min-h-screen pt-4 px-8 scroll-smooth">
+    <div class="relative text-white min-h-screen pt-4 px-8 scroll-smooth">
       <Navbar />
       <slot />
     </div>

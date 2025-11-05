@@ -1,0 +1,16 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ResourcesCard from "@/components/astro/ResourcesCard.astro";
+import { RESOURCES } from "@/data/resources";
+---
+<BaseLayout title="Logistics Hackathon | Recursos">
+  <div
+    class="flex flex-col items-center justify-center min-h-[calc(100vh-14rem)] md:min-h-[calc(50vh-4rem)] gap-8"
+  >
+    <h1 class="text-6xl font-bold text-white mb-8">Recursos</h1>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    {RESOURCES.map((resource) => <ResourcesCard {resource} />)}
+  </section>
+</BaseLayout>
