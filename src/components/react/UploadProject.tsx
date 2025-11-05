@@ -22,7 +22,7 @@ export function UploadProjectButton() {
   if (!showButton) return null;
   return (
     <Button variant="secondary">
-      <a href="" target="_blank">
+      <a href="#" target="_blank">
         Subir proyecto
       </a>
     </Button>
