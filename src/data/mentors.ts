@@ -100,6 +100,9 @@ export const MENTORS: Mentor[] = [
     name: "Jocelyn Adonay Cerna Camacho ",
     role: "Consutlor @ LDM",
     skills: [
+      "Políticas de Inventario",
+      "Rotación de Inventario",
+      "Coberturas de Inventario",
       "Planeación de Demanda",
       "Control de Inventarios",
       "Optimización de Cadenas de Suministro",
@@ -115,6 +118,7 @@ export const MENTORS: Mentor[] = [
     name: "Jorge Evaristo Pardo Ruíz",
     role: "Consultor Sr. @ LDM",
     skills: [
+      "Desarrollo de Matriz de Indicadores",
       "Gestión de Proyectos Estratégicos",
       "Metologías Ágiles",
       "Proyectos Híbridos",
@@ -133,6 +137,7 @@ export const MENTORS: Mentor[] = [
     name: "José Arturo Gómez Arrucha",
     role: "Gerente de Proyectos @ LDM",
     skills: [
+      "Diagrama de Flujo BPMN 2.0",
       "Gestión de Procesos",
       "Optimización de Cadena de Suministro",
       "Implementación de Tecnología",
