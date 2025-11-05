@@ -1,1 +1,1 @@
-export const ENABLE_SESSIONS = false;
+export const ENABLE_SESSIONS = true;
