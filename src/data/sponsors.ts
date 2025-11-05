@@ -24,4 +24,10 @@ export const SPONSORS: Sponsors[] = [
     width: 200,
     height: 100.,
   },
+  {
+    alt: "Binary Brains",
+    src: "/LogisticsHackathon/communities/image.png",
+    width: 180,
+    height: 90,
+  },
 ];
