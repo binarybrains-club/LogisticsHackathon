@@ -13,13 +13,13 @@ import { ENABLE_SESSIONS } from "@/utils/config";
     {
       MENTORS.map((mentor) => (
         <div class="liquid-glass relative">
-          <div class="glass flex flex-row pl-4 py-4 pr-6 gap-4 items-start h-full">
+          <div class="glass flex flex-col sm:flex-row pl-4 py-4 pr-6 gap-4 items-start h-full">
             <Image
               src={`/LogisticsHackathon/mentors/${mentor.profilePath}`}
               alt={`${mentor.name}' profile card`}
               width={48}
               height={48}
-              class="size-24 rounded-full self-start object-cover"
+              class="size-24 rounded-full self-center-safe sm:self-start object-cover"
             />
             <div class="flex-1 flex flex-col">
               <span class="font-semibold text-xl">
@@ -32,7 +32,7 @@ import { ENABLE_SESSIONS } from "@/utils/config";
               <div class="flex flex-row gap-2 mt-4 flex-wrap">
                 {
                   mentor.skills.map((skill) => (
-                    <span class="text-sm rounded-full bg-secondary/70 px-2 break-all">{skill}</span>
+                    <span class="text-sm rounded-full bg-secondary/70 px-2">{skill}</span>
                   ))
                 }
               </div>

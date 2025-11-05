@@ -46,7 +46,7 @@ export const JUDGES: Judge[] = [
     name: "Jocelyn Adonay Cerna Camacho ",
     role: "Consultor @ LDM",
     profilePath: "jocelyn_adonay.png",
-    className: "to-stone-300/30",
+    className: "to-stone-600/10",
   },
   {
     name: "Iván Guerrero",
@@ -56,13 +56,13 @@ export const JUDGES: Judge[] = [
   },
   {
     name: "Dr. Pedro Avelino Arenas",
-    role: "Jefe de Programa Académico de Ingeniería Industrial",
+    role: "Jefe de Programa Académico de Ingeniería Industrial @ UPIICSA",
     profilePath: "pedro.png",
     className: "to-yellow-900/40",
   },
   {
     name: "Ing. Yventz Entzana Garduño",
-    role: "Jefe de Programa Académico de Ciencias de la Computación",
+    role: "Jefe de Programa Académico de Ciencias de la Computación @ UPIICSA",
     profilePath: "yv.png",
     className: "to-zinc-950/80",
   },
