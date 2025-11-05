@@ -6,7 +6,7 @@ export type Mentor = {
 };
 export const MENTORS: Mentor[] = [
   {
-    name: "Bryan Castro Sánchez",
+    name: "Bryan Castro (untalbry)",
     role: "Analista de sistemas @ Binary Brains | Founder @ Binary Brains | Backend developer",
     skills: [
       "Java",
@@ -23,7 +23,7 @@ export const MENTORS: Mentor[] = [
     profilePath: "untalbry.jpg",
   },
   {
-    name: "Eduardo Dominguez Navarrete",
+    name: "Eduardo Dominguez (EduDom)",
     skills: [
       "Inteligencia Artificial",
       "Python",
@@ -37,7 +37,7 @@ export const MENTORS: Mentor[] = [
     profilePath: "eduardo.jpg",
   },
   {
-    name: "Eduardo Gamaliel Garcia Zavala",
+    name: "Gamaliel Garcia (EGAMAGZ)",
     skills: [
       "Frontend Development",
       "Preact",
@@ -49,6 +49,7 @@ export const MENTORS: Mentor[] = [
       "CSS",
       "Javascript/Typescript",
       "Power Platform",
+      "Github",
     ],
     role:
       "Consultor Power Platform @ itprove | Frontend Lead @ BinaryBrains | OSS Contributor @ JSR",
@@ -63,6 +64,7 @@ export const MENTORS: Mentor[] = [
       "Inteligencia Artificial",
       "Watsonx AI",
       "Watsonx Orchestrate",
+      "Github",
     ],
     role: "AI Engineer @ IBM",
     profilePath: "erandi.jpg",
@@ -76,6 +78,7 @@ export const MENTORS: Mentor[] = [
       "Swift",
       "Devops",
       "Kubernetes",
+      "Github",
     ],
     role: "Microsoft DevOps MVP | Cloud & Software Engineer",
     profilePath: "manu.jpeg",
@@ -86,6 +89,7 @@ export const MENTORS: Mentor[] = [
       "Pentesting web",
       "OSINT",
       "Hacking",
+      "Github",
     ],
     role: "Pentester at Haak Cybersecurity Consulting | Co-founder @cybertech_comu",
     profilePath: "lenin.jpeg",

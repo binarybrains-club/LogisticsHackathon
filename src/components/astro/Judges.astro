@@ -1,0 +1,42 @@
+---
+import { JUDGES } from "@/data/judges";
+import { Image } from "astro:assets";
+---
+
+<section id="Judges" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
+  <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-white text-center">
+    Jueces
+  </h2>
+
+  <div class="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    {
+      JUDGES.map((judge) => (
+        <div class="liquid-glass relative">
+          <div class="glass flex flex-col">
+            <Image
+              src={`/LogisticsHackathon/judges/${judge.profilePath}`}
+              alt={judge.name}
+              width={300}
+              height={200}
+              class="object-cover"
+            />
+            <div
+              class={`absolute min-h-6 w-full bottom-0 left-0 flex flex-col pt-3 pb-4 px-4 bg-linear-to-b from-transparent ${
+                judge.className ?? ""
+              }`}
+            >
+              <span class="font-semibold text-2xl">
+                {judge.name}
+              </span>
+              <span class="font-thin">
+                {judge.role}
+              </span>
+            </div>
+          </div>
+          <div class="mix-blend-overlay glass-border" />
+          <div class="mix-blend-screen opacity-25 glass-border" />
+        </div>
+      ))
+    }
+  </div>
+</section>

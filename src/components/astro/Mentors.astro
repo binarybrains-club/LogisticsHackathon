@@ -5,21 +5,21 @@ import { Button } from "@/components/ui/button";
 import { ENABLE_SESSIONS } from "@/utils/config";
 ---
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col" id="Mentors">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col mt-8" id="Mentors">
   <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-white text-center">
     Mentores
   </h2>
-  <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
     {
       MENTORS.map((mentor) => (
         <div class="liquid-glass relative">
-          <div class="glass flex flex-col md:flex-row pl-4 py-4 pr-6 gap-4 items-start h-full">
+          <div class="glass flex flex-row pl-4 py-4 pr-6 gap-4 items-start h-full">
             <Image
               src={`/LogisticsHackathon/mentors/${mentor.profilePath}`}
               alt={`${mentor.name}' profile card`}
               width={48}
               height={48}
-              class="size-24 rounded-full self-center md:self-start object-cover"
+              class="size-24 rounded-full self-start object-cover"
             />
             <div class="flex-1 flex flex-col">
               <span class="font-semibold text-xl">
@@ -48,6 +48,8 @@ import { ENABLE_SESSIONS } from "@/utils/config";
   </div>
 
   <Button variant="primary" className="self-center mt-6 px-8" disabled={!ENABLE_SESSIONS}>
-    ¡Solicitar sesión tú mentor!
+    <a href="https://untalbry.notion.site/2997125838b9806db368e413a5dd4593?pvs=105" target="_blank">
+      ¡Solicitar sesión tú mentor!
+    </a>
   </Button>
 </section>
