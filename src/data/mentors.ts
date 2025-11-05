@@ -98,7 +98,7 @@ export const MENTORS: Mentor[] = [
   },
   {
     name: "Jocelyn Adonay Cerna Camacho ",
-    role: "Consutlor @ LDM",
+    role: "Consultor @ LDM",
     skills: [
       "Planeación de Demanda",
       "Control de Inventarios",
