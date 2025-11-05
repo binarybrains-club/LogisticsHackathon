@@ -60,4 +60,10 @@ export const JUDGES: Judge[] = [
     profilePath: "pedro.png",
     className: "to-yellow-900/40",
   },
+  {
+    name: "Maestro Yvents",
+    role: "Jefe de Programa Académico de Ciencias de la Computación",
+    profilePath: "yv.png",
+    className: "to-zinc-950/80",
+  },
 ];
