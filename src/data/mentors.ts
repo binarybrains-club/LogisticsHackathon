@@ -58,7 +58,7 @@ export const MENTORS: Mentor[] = [
     profilePath: "gamaliel.jpeg",
   },
   {
-    name: "Erandi Abigaíl García",
+    name: "Erandi Abigaíl",
     skills: [
       "Python",
       "SQL",
