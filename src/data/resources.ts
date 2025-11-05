@@ -27,6 +27,10 @@ export const RESOURCES: Resource[] = [
         href: "https://skills.yourlearning.ibm.com/channel/CNL_LCB_1569538212365",
         label: "Communication Skills",
       },
+      {
+        href: "https://drive.google.com/drive/folders/1cBvwkWFuX7uEps50on7f0ORQK64VHfj4",
+        label: "Acceso y uso de WatsoxAI",
+      },
     ],
   },
   {
