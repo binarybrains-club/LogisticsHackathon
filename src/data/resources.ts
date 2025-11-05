@@ -41,8 +41,7 @@ export const RESOURCES: Resource[] = [
     links: [
       {
         href: "https://skills.yourlearning.ibm.com/channel/CNL_LCB_1616532512410",
-        label:
-          "Web Development: Learn JavaScript",
+        label: "Web Development: Learn JavaScript",
       },
     ],
   },
