@@ -50,8 +50,13 @@ export const RESOURCES: Resource[] = [
       name: "LDM",
       logoPath: "LDM.png",
     },
-    title: "",
+    title: "Capacitaciones de LDM & BPMN",
     description: "",
-    links: [],
+    links: [
+      {
+        href: "https://drive.google.com/drive/folders/1SyG24k4ArkHfZt9DZGpeh9rMdA4nX5DB",
+        label: "Diagrama de Flujo - BPMN 2.0",
+      },
+    ],
   },
 ];
