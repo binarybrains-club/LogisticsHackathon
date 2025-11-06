@@ -21,7 +21,7 @@ export function UploadProjectButton() {
   }, []);
   if (!showButton) return null;
   return (
-    <Button variant="secondary">
+    <Button variant="secondary" disabled>
       <a
         href="https://docs.google.com/forms/d/e/1FAIpQLSf-5sWj9Mwf-Hi50hEBDd97uBvCK-tiuRaEBGpfbxsQK71yCQ/viewform"
         target="_blank"
